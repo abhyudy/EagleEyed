@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/yash/login.html?# -->
+<html lang="en" class="hydrated"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=&lt;&lt;device-width&gt;&gt;, initial-scale=1.0">
+
+    <title>login page</title>
+</head>
+
+<body style="background-image: url('static/bt3.jpeg');">
+    <div class="container">
+        <form action="{% url 'signinuser' %}" method="post">
+            {% csrf_token %}
+            <h3>Welcome back</h3>
+            <h4>login to your existing account</h4>
+            <div class="inputBox">
+                <span>Username</span>
+                <div class="box">
+                    <div class="icon">
+                        <ion-icon name="person-outline" role="img" class="md hydrated" aria-label="person outline"></ion-icon>
+                    </div>
+                    <input type="text" name="firstName" placeholder="Enter username">
+                </div>
+            </div>
+            <div class="inputBox">
+                <span>Password</span>
+                <div class="box">
+                    <div class="icon">
+                        <ion-icon name="lock-closed-outline" role="img" class="md hydrated" aria-label="lock closed outline"></ion-icon>
+                    </div>
+                    <input type="password" name="password" placeholder="Enter password ">
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <div class="inputBox">
+                <div class="box">
+                    <input type="submit" value="login">
+
+
+                </div>
+                <a href="#" class="forgot">Forgot Password?</a>
+
+
+            </div>
+            <h5>Don't have an account</h5>
+            <a href="#" class="SignIn">Create new</a>
+
+
+
+    </form></div>
+
+
+
+
+
+    
+
+    <script type="module" src="./login page_files/ionicons.esm.js.download"></script>
+    <script nomodule="" src="./login page_files/ionicons.js.download"></script>
+    <style>
+
+        body 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #16191d;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #5e4c4c38;
+            box-shadow: 25px 25pc 75px rgba(0, 0, 0, 0.25),
+                10px 10px 70px rgba(0, 0, 0, 0.25),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.75);
+            border-radius: 30px;
+            border-radius: 30px;
+            padding: 50px;
+
+        }
+
+        .container h3 {
+            color: rgb(250, 249, 249);
+            font-size: 1.7em;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .container h4 {
+            color: rgb(254, 253, 253);
+            font-size: 1.1em;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .container h4 {
+            color: rgb(250, 247, 247);
+            font-size: 0.9em;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .container h5 {
+        text-align: center;
+        color: #fff;
+        }
+
+        .inputBox span {
+            display: inline-block;
+            color: rgb(254, 252, 252);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-size: 0.75em;
+            border-left: 4px solidrgb(8, 8, 8);
+            padding-left: 4px;
+            line-height: 1em;
+        }
+
+        .inputBox .box {
+            display: flex;
+
+        }
+
+        .inputBox .box .icon {
+            position: relative;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.3em;
+        }
+
+        .inputBox .box input {
+            position: relative width 100;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+
+        }
+
+        .inputBox .box input[type="submit"] {
+            background: #1f63f2;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+                inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+                inset -3px -3px 5px rgba(0, 0, 0, 0.5) color #fff;
+            cursor: pointer;
+            padding: 5px 107px 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .inputBox .box input[type="submit"]:hover {
+            filter: brightness(1.3);
+        }
+
+        label {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85;
+            align-items: center;
+        }
+
+        .forgot {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-left: 47%;
+            font-size: 0.75em;
+            display: block;
+            align-items: center;
+        }
+
+        .SignIn {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            font-size: 0.85em;
+            display: block;
+            text-align: center;
+        }
+
+        label input {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85em;
+            text-decoration: none;
+        }
+
+        input,
+        .btn {
+            display: inline-block;
+            line-height: 15px;
+            text-decoration: wavy;
+            opacity: 0.85;
+            border: none;
+            padding: 4px;
+
+
+        }
+
+        input:hover,
+        .btn:hover {
+            opacity: 1;
+        }
+
+
+        .fb {
+            background-color: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background-color: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background-color: #dd4b39;
+            color: white;
+        }
+
+        /* style the submit button */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Two-column layout */
+        .col {
+           
+            width: 75%;
+            margin-top: 6px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* vertical line */
+        .vl {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border: 2px solid #ddd;
+            height: 175px;
+        }
+
+        /* text inside the vertical line */
+        .vl-innertext {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+
+        /* hide some text on medium and large screens */
+        .hide-md-lg {
+            display: none;
+        }
+
+        /* bottom container */
+        .bottom-container {
+            text-align: center;
+            background-color: #666;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+        /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 650px) {
+            .col {
+                /* width: 100%; */
+                margin-top: 0;
+            }
+
+            /* hide the vertical line */
+            .vl {
+                display: none;
+            }
+
+            /* show the hidden text on small screens */
+            .hide-md-lg {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
